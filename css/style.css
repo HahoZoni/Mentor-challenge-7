@@ -1,0 +1,318 @@
+:root {
+--strong-cyan: hsl(171, 66%, 44%);
+--light-blue: hsl(233, 100%, 69%);
+--dark-grayish-blue: hsl(210, 10%, 33%);
+--grayish-blue: hsl(201, 11%, 66%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+img, picture {
+    max-width: 100%;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.app {
+    padding: 0 20px;
+}
+.app header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/bg-header-mobile.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+@media(min-width: 575px){
+    .app header .logo {
+        background-image: url(../images/bg-header-desktop.png);
+    }
+}
+.app header .comp-info{
+    text-align: center;
+    margin: -30px auto 40px;
+    width: 660px;
+    max-width: 100%;
+}
+.app header .comp-info h1 {
+    color: var(--dark-grayish-blue);
+    font-size: 38px;
+    font-weight: 600;
+}
+.app header .comp-info > p {
+    font-size: 18px;
+    color: var(--grayish-blue);
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.app header .downloading {
+    text-align: center;
+}
+.app header .downloading a {
+    font-size: 18px;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 30px;
+    display: block;
+    transition: .3s;
+}
+.app header .downloading a.ios {
+    background-color: var(--strong-cyan);
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px 0 hsl(171deg 66% 44% / 73%);
+}
+.app header .downloading a.mac {
+    background-color: var(--light-blue);
+    box-shadow: 0 2px 2px 0 hsl(233deg 100% 69% / 75%);
+}
+.app header .downloading a.ios:hover {
+    background-color: hsl(171deg 66% 44% / 73%);
+}
+.app header .downloading a.mac:hover {
+    background-color: hsl(233deg 100% 69% / 75%);
+}
+@media(min-width: 575px){
+    .app header .downloading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .app header .downloading a.ios {
+        margin: 0;
+    }
+}
+.app .snippets {
+    margin: 100px auto;
+    text-align: center;
+}
+.app .snippets .snip-head {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 20px;
+}
+.app .snippets .snip-prag {
+    font-size: 18px;
+    margin: 0 auto 40px;
+    max-width: 660px;
+    color: var(--grayish-blue);
+    line-height: 1.5;
+}
+@media(min-width: 992px){
+    .app .snippets .content {
+       display: flex;
+       align-items: center;
+       gap: 90px;
+       margin-top: 60px;
+    }
+    .snippets .content > img {
+       width: 50%;
+    }
+    .snippets .content .right-content {
+        text-align: left;
+        width: 26%;
+    }
+}
+
+
+.content .right-content .feature{
+    margin-top: 35px;
+}
+.right-content .feature > h3  {
+    font-size: 20px;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 20px;
+}
+.right-content .feature > p {
+    font-size: 18px;
+    color: var(--grayish-blue);
+    line-height: 1.5;
+}
+.app .access {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.app .access h2 {
+    font-size: 32px;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 20px;
+}
+.app .access p {
+    font-size: 18px;
+    color: var(--grayish-blue);
+    line-height: 1.5;
+    margin: 0 auto 80px;
+    max-width: 690px;
+}
+.app .work-flow {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.app .work-flow .flow-head {
+    font-size: 30px;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 20px;
+}
+.app .work-flow .flow-prag {
+    font-size: 18px;
+    color: var(--grayish-blue);
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.app .work-flow .box {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+   margin-top: 50px;
+}
+.app .work-flow .box .info {
+    max-width: 350px;
+}
+.app .work-flow .box .info > img {
+    margin-bottom: 20px;
+}
+.app .work-flow .box .info > h3 {
+    font-size: 25px;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 20px;
+}
+.app .work-flow .box .info > p {
+    font-size: 18px;
+    color: var(--grayish-blue);
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.app .int-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+.app .int-brand img {
+    min-width: 165px;
+    margin-bottom: 40px;
+}
+.app .downloading {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.app .downloading > h3 {
+    font-size: 30px;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 20px;
+}
+.app .downloading > p {
+    font-size: 18px;
+    color: var(--grayish-blue);
+    line-height: 1.5;
+    margin: 0 auto 40px;
+    max-width: 690px;
+}
+
+.app .downloading .down-links > a {
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 30px;
+    display: block;
+    transition: .3s;
+}
+.app .downloading .down-links a.ios {
+    background-color: var(--strong-cyan);
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px 0 hsl(171deg 66% 44% / 73%);
+}
+.app .downloading .down-links a.mac {
+    background-color: var(--light-blue);
+    box-shadow: 0 2px 2px 0 hsl(233deg 100% 69% / 75%);
+}
+.app .downloading .down-links a.ios:hover {
+    background-color: hsl(171deg 66% 44% / 73%);
+}
+.app .downloading .down-links a.mac:hover {
+    background-color: hsl(233deg 100% 69% / 75%);
+}
+@media(min-width: 575px){
+    .app .downloading .down-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .app .downloading .down-links a.ios {
+        margin: 0;
+    }
+}
+
+.app nav {
+    text-align: center;
+    background-color: hsl(0deg 0% 89%);
+    padding: 30px 0;
+}
+
+.app nav > img {
+   max-width: 50px;
+    margin-bottom: 30px;
+}
+
+.app nav ul li {
+    margin-bottom: 30px;
+}
+.app nav ul li a {
+    color: var(--dark-grayish-blue);
+    transition: .3s;
+}
+.app nav ul li a:hover {
+    color: var(--strong-cyan);
+}
+@media(min-width: 768px){
+    .app nav {
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+    }
+    .app nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        column-gap: 43px;
+        row-gap: 20px;
+        flex-basis: 35%;
+    }
+    .app nav ul li {
+        margin-bottom: 0;
+    }
+    .app nav > img {
+        margin-bottom: 0;
+        flex-basis: 10%;
+    }
+}
+.app nav .social a:nth-child(2) {
+    margin: 0 30px;
+}
+.app footer {
+    text-align: center;
+    background-color: var(--grayish-blue);
+    color: #fff;
+    padding: 15px;
+}
+.app footer .name {
+    color: #fff;
+}
